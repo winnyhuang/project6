@@ -1,0 +1,51 @@
+@import "variables.less";
+
+* {
+  box-sizing: border-box;
+}
+
+
+.square-container{
+
+  .square{
+  height:@height;
+  width:@width;
+  background-color:@blue;
+  margin-bottom:@margin;
+  }
+  
+  &:hover {
+
+    .square{
+      -webkit-transform: translate(700px,0px);
+    }
+
+  }
+
+}
+
+&.linear{
+  -webkit-transition: all 1s linear;
+}
+
+&.ease{
+  -webkit-transition: all 1s ease;
+}
+
+&.ease-in{
+  -webkit-transition: all 1s ease-in;
+}
+
+&.ease-out{
+  -webkit-transition: all 1s ease-out;
+}
+
+&.ease-in-out{
+  -webkit-transition: all 1s ease-in-out;
+}
+
+&.cubic-bezier{
+  -webkit-transition: all 1s cubic-bezier(.43,1,.77,1);
+}
+
+

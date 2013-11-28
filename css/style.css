@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+.square-container .square {
+  height: 20px;
+  width: 20px;
+  background-color: #0099ff;
+  margin-bottom: 20px;
+}
+.square-container:hover .square {
+  -webkit-transform: translate(700px, 0px);
+}
+.linear {
+  -webkit-transition: all 1s linear;
+}
+.ease {
+  -webkit-transition: all 1s ease;
+}
+.ease-in {
+  -webkit-transition: all 1s ease-in;
+}
+.ease-out {
+  -webkit-transition: all 1s ease-out;
+}
+.ease-in-out {
+  -webkit-transition: all 1s ease-in-out;
+}
+.cubic-bezier {
+  -webkit-transition: all 1s cubic-bezier(0.43, 1, 0.77, 1);
+}
